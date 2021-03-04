@@ -1,13 +1,16 @@
 <!--我的-->
 <template>
   <div class="user">
-    我的
+    <Item/>
   </div>
 </template>
 
 <script>
+import Item from './components/item'
 export default {
-
+  components: {
+    Item
+  }
 }
 </script>
 
