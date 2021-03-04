@@ -3,10 +3,10 @@
   <div class="footer">
     <van-tabbar route active-color="#FA010A" inactive-color="#b2b2b2">
       <van-tabbar-item v-for="item in tabbarData" :key="item.id" :to="{name:item.to}">
-            <span>{{item.title}}</span>
-            <template #icon="props">
-              <img :src="props.active ? item.active_icon : item.icon" />
-            </template>
+        <span>{{item.title}}</span>
+        <template #icon="props">
+          <img :src="props.active ? item.active_icon : item.icon" />
+        </template>
       </van-tabbar-item>
     </van-tabbar>
   </div>
@@ -68,6 +68,7 @@ export default {
   width: 100%;
   box-sizing: border-box;
   /deep/.van-tabbar-item__icon{
+    .rem(margin-bottom, 2px);
     img{
       .rem(width, 26px);
       .rem(height, 26px);
@@ -76,5 +77,8 @@ export default {
    /deep/.van-tabbar-item__text{
       .rem(font-size, 10px);
     }
+}
+.van-tabbar {
+   .rem(height,49px);
 }
 </style>
