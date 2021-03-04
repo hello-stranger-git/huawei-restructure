@@ -28,7 +28,7 @@ export default {
         {
           id: 2,
           title: '客流',
-          to: 'Flow',
+          to: 'FlowEnterStore',
           icon: require('@/assets/image/footer/flow.png'),
           active_icon: require('@/assets/image/footer/flow_select.png')
         },
