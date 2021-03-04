@@ -2,7 +2,7 @@
 <template>
   <div class="video">
     本店视频
-    <VideoItem v-for="item in data" :key="item.id" :data="data"/>
+    <VideoItem v-for="item in data" :key="item.id" :data="item"/>
   </div>
 </template>
 
@@ -14,28 +14,28 @@ export default {
       data: [
         {
           id: 1,
-          icon: require(),
+          // icon: require(),
           time: '16:22:30',
           line: true,
           title: '大厅3'
         },
         {
           id: 2,
-          icon: require(),
+          // icon: require(),
           time: '16:25:30',
           line: true,
           title: '大厅1'
         },
         {
           id: 3,
-          icon: require(),
+          // icon: require(),
           time: '16:22:30',
           line: true,
           title: '大厅2'
         },
         {
           id: 4,
-          icon: require(),
+          // icon: require(),
           time: '16:22:30',
           line: false,
           title: '人脸识别进门'

@@ -13,28 +13,28 @@ export default {
       data: [
         {
           id: 1,
-          icon: require(),
+          // icon: require(),
           age: '35~50岁',
           count: 0,
           vip: false
         },
         {
           id: 2,
-          icon: require(),
+          // icon: require(),
           age: '20~35岁',
           count: 2,
           vip: true
         },
         {
           id: 3,
-          icon: require(),
+          // icon: require(),
           age: '35~50岁',
           count: 6,
           vip: false
         },
         {
           id: 4,
-          icon: require(),
+          // icon: require(),
           age: '35~50岁',
           count: 3,
           vip: true
