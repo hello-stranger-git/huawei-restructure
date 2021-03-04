@@ -17,6 +17,6 @@ export default {
   top:0;
   width: 100%;
   box-sizing: border-box;
-  background-color: #ececec;
+  background-color: rebeccapurple;
 }
 </style>
