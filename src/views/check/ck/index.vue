@@ -1,0 +1,16 @@
+<!--点检-->
+<template>
+  <div>
+    点检
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="scss" scoped>
+
+</style>

@@ -79,6 +79,18 @@ const routes = [
         component: () => import('@/views/user')
       }
     ]
+  },
+  // 点检
+  {
+    path: '/check/ck',
+    name: 'CK',
+    component: () => import('@/views/check/ck')
+  },
+  // 考评
+  {
+    path: '/check/kp',
+    name: 'KP',
+    component: () => import('@/views/check/kp')
   }
 ]
 
