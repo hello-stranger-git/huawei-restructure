@@ -1,6 +1,7 @@
+<!--每一个视频-->
 <template>
   <div>
-每一个菜单栏选项
+
   </div>
 </template>
 

@@ -41,7 +41,7 @@ export default {
 <style lang="less" scoped>
 .home{
   background-color: #ececec;
-  padding-bottom: 49px;
+  .rem(padding-bottom,49px);
 }
 .notice{
   position: fixed;

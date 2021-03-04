@@ -1,6 +1,7 @@
+<!--当日进店每一个用户-->
 <template>
   <div>
-每一个菜单栏选项
+当日进店每一个用户
   </div>
 </template>
 
@@ -14,6 +15,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 
 </style>

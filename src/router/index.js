@@ -19,7 +19,46 @@ const routes = [
       {
         path: '/flow',
         name: 'Flow',
-        component: () => import('@/views/flow')
+        redirect: '/flow/enterStore',
+        component: () => import('@/views/flow'),
+        children: [
+          // 当日进店
+          {
+            path: '/flow/enterStore',
+            name: 'FlowEnterStore',
+            component: () => import('@/views/flow/enterStore')
+          },
+          // 客流走势
+          {
+            path: '/flow/flowtrend',
+            name: 'FlowFlowtrend',
+            component: () => import('@/views/flow/flowtrend')
+          },
+          // 客群特征
+          {
+            path: '/flow/customerfeature',
+            name: 'FlowCustomerFeature',
+            component: () => import('@/views/flow/customerfeature')
+          },
+          // 客流与客单价
+          {
+            path: '/flow/flowprice',
+            name: 'FlowFlowPrice',
+            component: () => import('@/views/flow/flowprice')
+          },
+          // 店外客流
+          {
+            path: '/flow/outflow',
+            name: 'FlowOutFlow',
+            component: () => import('@/views/flow/outflow')
+          },
+          // 热力图
+          {
+            path: '/flow/hotmap',
+            name: 'FlowHotMap',
+            component: () => import('@/views/flow/hotmap')
+          }
+        ]
       },
       // 点检
       {
@@ -42,6 +81,12 @@ const routes = [
     ]
   }
 ]
+
+const originalPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push (location, onResolve, onReject) {
+  if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
+  return originalPush.call(this, location).catch(err => err)
+}
 
 const router = new VueRouter({
   routes
