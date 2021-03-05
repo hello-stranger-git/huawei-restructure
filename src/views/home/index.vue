@@ -48,6 +48,7 @@ export default {
   width: 100%;
   box-sizing: border-box;
   .rem(top,44px);
+  // z-index: -1
 }
 .navbar{
   .rem(margin-top,80px);
