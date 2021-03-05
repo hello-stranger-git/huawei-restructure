@@ -34,7 +34,8 @@ export default {
   },
   methods: {
     news () {
-      this.$toast('消息功能暂未开发')
+      // this.$toast('消息功能暂未开发')
+      this.$router.push({ name: 'Message' })
     },
     shopSelection () {
       // this.$toast('店铺选择功能暂未开发')

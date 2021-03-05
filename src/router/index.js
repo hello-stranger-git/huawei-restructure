@@ -80,6 +80,18 @@ const routes = [
       }
     ]
   },
+  // 消息
+  {
+    path: '/message',
+    name: 'Message',
+    component: () => import('@/layout/header/message')
+  },
+  // 报警信息
+  {
+    path: '/policeMessage',
+    name: 'PoliceMessage',
+    component: () => import('@/views/home/policeMessage')
+  },
   // 点检
   {
     path: '/check/ck',
