@@ -12,12 +12,6 @@ export default {
       type: Object
     }
   },
-  data () {
-    return {
-      baoJing: require('@/assets/image/home/navbar/baoJing.png') // 报警
-
-    }
-  },
   methods: {
     jump () {
       this.$emit('jump')
@@ -35,6 +29,9 @@ export default {
     color: #000000;
     .rem(line-height, 17px);
     .rem(margin-top, 10px) ;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
   }
   &>.van-icon{
   .rem(font-size, 44px);

@@ -12,23 +12,25 @@ export default {
       data: [
         {
           id: 1,
-          name: '报警信息'
-          // icon: require()
+          name: '报警信息',
+          icon: require('@/assets/image/home/navbar/baoJing.png'),
+          unread: 100
         },
         {
           id: 2,
-          name: '待整改'
-          // icon: require()
+          name: '待整改',
+          icon: require('@/assets/image/home/navbar/daiZhengGai.png')
         },
         {
           id: 3,
-          name: '考勤'
-          // icon: require()
+          name: '考勤',
+          icon: require('@/assets/image/home/navbar/kaoQin.png'),
+          unread: 3
         },
         {
           id: 4,
-          name: '巡查统计'
-          // icon: require()
+          name: '巡查统计',
+          icon: require('@/assets/image/home/navbar/xunCha.png')
         }
       ]
     }
@@ -43,5 +45,6 @@ export default {
 .navbar{
   .rem(height,103px);
   background:cadetblue;
+  display: flex;
 }
 </style>
