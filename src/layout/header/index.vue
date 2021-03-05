@@ -1,20 +1,26 @@
 <template>
   <div class="header">
     <!-- 头部左侧 -->
-    <div class="header_left">
+    <div class="header_left"  @click="shopSelection">
       <img :src="logo"/>
       <p>{{title}}</p>
-      <van-icon @click="shopSelection" name="arrow-down" />
+      <van-icon name="arrow-down" />
     </div>
     <!-- 头部右侧 -->
     <div class="header_right">
       <p>{{uname}}</p>
       <van-icon @click="news" :name="newsIcon" :badge="getBadge > 999?  '999+' : getBadge" />
     </div>
+    <DownPopup  :show="selectStoreShow" @clickOverlay="closePopup">
+
+      <SelectStore/>
+    </DownPopup>
   </div>
 </template>
 
 <script>
+import DownPopup from '@/components/downPopup'
+import SelectStore from './components/selectStore'
 export default {
   data () {
     return {
@@ -22,16 +28,27 @@ export default {
       logo: require('@/assets/image/header/huawei_logo.png'), // 店铺logo
       title: '龙岗区华为体验店', // 店铺名称
       uname: '兰宇贵', // 账号昵称
-      getBadge: 12 // 未读消息数量
+      getBadge: 12, // 未读消息数量
+      selectStoreShow: false// 控制选择门店弹出框
     }
   },
   methods: {
     news () {
-      this.$toast('消息功能暂未开发')
+      // this.$toast('消息功能暂未开发')
+      this.$router.push({ name: 'Message' })
     },
     shopSelection () {
-      this.$toast('店铺选择功能暂未开发')
+      // this.$toast('店铺选择功能暂未开发')
+      this.selectStoreShow = true
+    },
+    // 点击弹出框的遮罩层
+    closePopup () {
+      this.selectStoreShow = false
     }
+  },
+  components: {
+    DownPopup,
+    SelectStore
   }
 }
 </script>
@@ -47,6 +64,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items:center;
+  z-index: 1;
   &>div{
     display: flex;
     align-items:center;

@@ -80,6 +80,36 @@ const routes = [
       }
     ]
   },
+  // 消息
+  {
+    path: '/message',
+    name: 'Message',
+    component: () => import('@/layout/header/message')
+  },
+  // 报警信息
+  {
+    path: '/policeMessage',
+    name: 'PoliceMessage',
+    component: () => import('@/views/home/policeMessage')
+  },
+  // 待整改
+  {
+    path: '/waitReform',
+    name: 'WaitReform',
+    component: () => import('@/views/home/waitReform')
+  },
+  // 考勤
+  {
+    path: '/checkWork',
+    name: 'CheckWork',
+    component: () => import('@/views/home/checkWork')
+  },
+  // 巡查统计
+  {
+    path: '/checkCount',
+    name: 'CheckCount',
+    component: () => import('@/views/home/checkCount')
+  },
   // 点检
   {
     path: '/check/ck',

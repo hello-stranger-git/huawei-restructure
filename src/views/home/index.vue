@@ -9,20 +9,19 @@
     <CustomerFeature/>
     <FlowPrice/>
     <Video/>
-    <!--navbar-->
   </div>
 </template>
 
 <script>
-import Notice from './notice'
-import Navbar from './navbar'
-import EnterStore from './enterstore'
-import FlowTrend from './flowtrend'
-import OutFlow from './outflow'
-import TodayHot from './todayhot'
-import CustomerFeature from './customerfeature'
-import FlowPrice from './flowprice'
-import Video from './video'
+import Notice from './components/notice'
+import Navbar from './components/navbar'
+import EnterStore from './components/enterstore'
+import FlowTrend from './components/flowtrend'
+import OutFlow from './components/outflow'
+import TodayHot from './components/todayhot'
+import CustomerFeature from './components/customerfeature'
+import FlowPrice from './components/flowprice'
+import Video from './components/video'
 export default {
   components: {
     Notice,
@@ -48,6 +47,7 @@ export default {
   width: 100%;
   box-sizing: border-box;
   .rem(top,44px);
+  // z-index: -1
 }
 .navbar{
   .rem(margin-top,80px);

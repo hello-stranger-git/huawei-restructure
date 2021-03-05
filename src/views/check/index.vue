@@ -31,7 +31,6 @@ export default {
   },
   methods: {
     handleCheckItem (name) {
-      console.log(name)
       this.$router.push({ name: name })
     }
   }

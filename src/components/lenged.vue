@@ -14,7 +14,6 @@ export default {
     }
   },
   mounted () {
-    console.log(this.data.title)
   }
 }
 </script>
@@ -30,7 +29,8 @@ export default {
   &>span{
     vertical-align: middle;
     &:last-child{
-      margin-left: 4px;
+      .rem(margin-left,4px);
+      .rem(font-size,10px);
     }
   }
 }
