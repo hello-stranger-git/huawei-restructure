@@ -55,8 +55,8 @@ export default {
   .header_left{
     .rem(margin-left, 12px);
     img{
-      .rem(width, 33px);
-      .rem(height, 33px);
+      .rem(width, 30px);
+      .rem(height, 30px);
     }
     &>p{
       .rem(margin-left,4px) ;
