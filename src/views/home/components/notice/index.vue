@@ -14,5 +14,6 @@ export default {
 .notice{
   .rem(height,36px);
   background:#FF5151;
+  z-index: 9;
 }
 </style>
