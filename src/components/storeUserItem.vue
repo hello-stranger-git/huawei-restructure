@@ -46,15 +46,15 @@ export default {
 
 <style lang="less" scoped>
 .storeUserItem{
-  width: 65px;
+  .rem(width,65px);
   &>p{
-    font-size: 12px;
+  .rem(font-size,12px);
     display: flex;
     align-items: center;
     span{
       display: inline-block;
-      margin-left:4px ;
-      line-height: 17px;
+  .rem(margin-left,4x);
+  .rem(line-height,17px);
     }
   }
 
@@ -63,29 +63,29 @@ export default {
   margin: 0 auto;
   position: relative;
   text-align: center;
-  width: 58px;
-  height: 58px;
-  margin-bottom:4px ;
+  .rem(width,58px);
+  .rem(height,58px);
+  .rem(margin-bottom,4px);
 }
 .userIcon{
-  width: 58px;
-  height: 58px;
+  .rem(width,58px);
+  .rem(height,58px);
 }
 // vip图标样式
 .vipIcon{
   position: absolute;
   bottom: 0;
-  width: 19.87px;
-  height: 14.86px;
+  .rem(width,20px);
+  .rem(height,15px);
   right: 0;
 }
 .van-icon{
- font-size: 12px;
- margin-bottom:2px ;
+  .rem(font-size,12px);
+  .rem(margin-bottom,2px);
 }
 
 // 无图标时文字左边距
 .storeUserItem>p>.noIcon{
-  margin-left:16px;
+  .rem(margin-left,16px);
 }
 </style>
