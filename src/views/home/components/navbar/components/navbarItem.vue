@@ -1,7 +1,7 @@
 <template>
   <div class="navbarItem" @click="jump">
     <van-icon :name="data.icon" :badge="data.unread < 1 ? '' : data.unread>99 ? '99+' : data.unread" />
-    <p>{{data.name}}</p>
+    <p>{{data.title}}</p>
   </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
 
 <style lang="less" scoped>
 .navbarItem{
-  .rem(width, 50px);
+  .rem(width, 48px);
   text-align: center;
   &>p{
     .rem(font-size, 12px);

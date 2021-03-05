@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <NavBarItem v-for="item in data" :key="item.id" :data="item"/>
+    <NavBarItem v-for="item in data" :key="item.id" :data="item" @jump="jump(item.name)"/>
   </div>
 </template>
 
@@ -12,31 +12,42 @@ export default {
       data: [
         {
           id: 1,
-          name: '报警信息',
+          title: '报警信息',
           icon: require('@/assets/image/home/navbar/baoJing.png'),
-          unread: 100
+          unread: 100,
+          name: 'PoliceMessage'
         },
         {
           id: 2,
-          name: '待整改',
-          icon: require('@/assets/image/home/navbar/daiZhengGai.png')
+          title: '待整改',
+          icon: require('@/assets/image/home/navbar/daiZhengGai.png'),
+          unread: 0,
+          name: 'WaitReform'
         },
         {
           id: 3,
-          name: '考勤',
+          title: '考勤',
           icon: require('@/assets/image/home/navbar/kaoQin.png'),
-          unread: 3
+          unread: 3,
+          name: 'CheckWork'
         },
         {
           id: 4,
-          name: '巡查统计',
-          icon: require('@/assets/image/home/navbar/xunCha.png')
+          title: '巡查统计',
+          icon: require('@/assets/image/home/navbar/xunCha.png'),
+          unread: 0,
+          name: 'CheckCount'
         }
       ]
     }
   },
   components: {
     NavBarItem
+  },
+  methods: {
+    jump (name) {
+      this.$router.push({ name: name })
+    }
   }
 }
 </script>
