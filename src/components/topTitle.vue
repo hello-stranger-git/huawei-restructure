@@ -44,7 +44,7 @@ export default {
 
 <style lang="less" scoped>
 .topTitle{
-  display: fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   box-sizing: border-box;

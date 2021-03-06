@@ -13,13 +13,13 @@ export default {
       data: [
         {
           id: 1,
-          icon: require('@/assets/image/check/kaoping.png'),
+          icon: 'kaopingIcon',
           title: '考评',
           name: 'KP'
         },
         {
           id: 2,
-          icon: require('@/assets/image/check/check.png'),
+          icon: 'checkIcon',
           title: '点检',
           name: 'CK'
         }

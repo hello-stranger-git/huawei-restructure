@@ -2,6 +2,7 @@
 <template>
   <div class="policeMessage">
     <TopTitle title="报警消息" @onClickLeft="onClickLeft"/>
+    <div class="content">在这个标签里面写</div>
   </div>
 </template>
 
@@ -36,6 +37,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="less" scoped>
+.content{//不要改
+  background-color: bisque;
+  .rem(padding-top,44px);
+  box-sizing: border-box;
+}
 </style>

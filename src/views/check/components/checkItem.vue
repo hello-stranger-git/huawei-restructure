@@ -1,7 +1,8 @@
 <!--点检每一项-->
 <template>
   <div class="checkItem" @click="handleCheckItem">
-    <img :src="data.icon">
+    <!-- <img :src="data.icon"> -->
+    <svg-icon class="img" :icon-class="data.icon"/>
     <p>{{ data.title }}</p>
   </div>
 </template>
@@ -25,7 +26,7 @@ export default {
 .checkItem{
   .rem(width,66px);
   text-align: center;
-  img{
+  .img{
     .rem(width,66px);
     .rem(height,66px);
   }
