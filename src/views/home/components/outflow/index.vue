@@ -2,6 +2,7 @@
 <template>
   <div class="outflow">
 店外客流
+<svg-icon icon-class="policeMessageSvg"></svg-icon>
   </div>
 </template>
 
