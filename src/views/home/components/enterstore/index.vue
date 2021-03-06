@@ -61,6 +61,7 @@ export default {
 <style lang="less" scoped>
 .enterstore{
   .rem(height,169px);
+  .rem(padding,12px);
   background-color: #fff;
 
 .enterstore_content{
