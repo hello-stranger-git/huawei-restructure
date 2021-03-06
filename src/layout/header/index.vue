@@ -2,7 +2,8 @@
   <div class="header">
     <!-- 头部左侧 -->
     <div class="header_left"  @click="shopSelection">
-      <img :src="logo"/>
+      <!-- <img :src="logo"/> -->
+      <svg-icon icon-class="logo"></svg-icon>
       <p>{{title}}</p>
       <van-icon name="arrow-down" />
     </div>
@@ -72,7 +73,11 @@ export default {
   // 头部左侧样式
   .header_left{
     .rem(margin-left, 12px);
-    img{
+    // img{
+    //   .rem(width, 30px);
+    //   .rem(height, 30px);
+    // }
+    .svg-icon{
       .rem(width, 30px);
       .rem(height, 30px);
     }
