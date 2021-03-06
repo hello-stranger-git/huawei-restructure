@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 
 import '@/assets/css/common.css'
-import '@/utils/lib-flexible/flexible.js'
+// import '@/utils/lib-flexible/flexible.js'
 import Vant from 'vant'
 import 'vant/lib/index.css'
 // 引入echarts挂载全局

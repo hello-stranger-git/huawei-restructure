@@ -41,6 +41,7 @@ export default {
     .rem(padding-left, 6px);
     .rem(padding-right, 6px) ;
     .rem(border-radius, 10px);
+    .rem(font-size,12px);
     border: none;
   }
 }

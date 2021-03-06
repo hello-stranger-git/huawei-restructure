@@ -3,9 +3,10 @@
     <!-- 头部左侧 -->
     <div class="header_left"  @click="shopSelection">
       <!-- <img :src="logo"/> -->
-      <svg-icon icon-class="logo"></svg-icon>
+      <svg-icon icon-class="huawei_logo" class="logo"></svg-icon>
       <p>{{title}}</p>
-      <van-icon name="arrow-down" />
+      <svg-icon icon-class="arrowIcon" class="arrow"></svg-icon>
+      <!-- <van-icon name="arrow-down" /> -->
     </div>
     <!-- 头部右侧 -->
     <div class="header_right">
@@ -77,9 +78,14 @@ export default {
     //   .rem(width, 30px);
     //   .rem(height, 30px);
     // }
-    .svg-icon{
+    .logo{
       .rem(width, 30px);
       .rem(height, 30px);
+    }
+    .arrow{
+      .rem(width, 10px);
+      .rem(height, 10px);
+      .rem(margin-left, 3px);
     }
     &>p{
       .rem(margin-left,4px) ;

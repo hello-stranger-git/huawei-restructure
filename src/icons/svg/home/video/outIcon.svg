@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #000;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-3 {
+        stroke: #e60012;
+      }
+
+      .cls-5 {
+        fill: #e60012;
+      }
+    </style>
+  </defs>
+  <g id="组_280" data-name="组 280" transform="translate(-256 -1574)">
+    <rect id="矩形_241" data-name="矩形 241" class="cls-1" width="34" height="34" transform="translate(256 1574)"/>
+    <g id="组_52" data-name="组 52" transform="translate(259.044 1584)">
+      <path id="路径_67" data-name="路径 67" class="cls-2" d="M281.223,336.02" transform="translate(-273.373 -322)"/>
+      <path id="路径_68" data-name="路径 68" class="cls-2" d="M277.47,332.268" transform="translate(-273.54 -322)"/>
+      <path id="路径_69" data-name="路径 69" class="cls-3" d="M276.59,326.273a19.122,19.122,0,0,0-2.883,2.232" transform="translate(-273.707 -322)"/>
+      <path id="路径_70" data-name="路径 70" class="cls-3" d="M300.35,328.626A19.528,19.528,0,0,0,286.8,323.25a19.993,19.993,0,0,0-5.418.742" transform="translate(-273.366 -322)"/>
+      <path id="路径_71" data-name="路径 71" class="cls-4" d="M295.785,332.383" transform="translate(-272.726 -322)"/>
+      <path id="路径_72" data-name="路径 72" class="cls-2" d="M292.032,336.136" transform="translate(-272.893 -322)"/>
+      <path id="路径_73" data-name="路径 73" class="cls-2" d="M281.223,336.02" transform="translate(-273.373 -322)"/>
+      <path id="路径_74" data-name="路径 74" class="cls-3" d="M280.02,330.389a13.529,13.529,0,0,0-2.549,1.879" transform="translate(-273.54 -322)"/>
+      <path id="路径_75" data-name="路径 75" class="cls-3" d="M296.269,332.383a13.88,13.88,0,0,0-9.63-3.82,14.289,14.289,0,0,0-1.755.107" transform="translate(-273.21 -322)"/>
+      <path id="路径_76" data-name="路径 76" class="cls-2" d="M292.032,336.136" transform="translate(-272.893 -322)"/>
+      <path id="路径_77" data-name="路径 77" class="cls-3" d="M284.137,334.307a8.125,8.125,0,0,0-2.914,1.713" transform="translate(-273.373 -322)"/>
+      <ellipse id="椭圆_38" data-name="椭圆 38" class="cls-5" cx="1.513" cy="1.449" rx="1.513" ry="1.449" transform="translate(11.916 16.102)"/>
+      <line id="直线_29" data-name="直线 29" class="cls-3" x2="15.667" y2="17" transform="translate(2.395)"/>
+    </g>
+  </g>
+</svg>

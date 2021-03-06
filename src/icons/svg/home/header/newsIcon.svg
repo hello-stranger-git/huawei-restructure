@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.022" height="24" viewBox="0 0 24.022 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #141414;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #141414;
+      }
+    </style>
+  </defs>
+  <g id="组_3" data-name="组 3" transform="translate(-329.141 -49.163)">
+    <rect id="矩形_4" data-name="矩形 4" class="cls-1" width="24" height="24" transform="translate(329.163 49.163)"/>
+    <g id="组_66" data-name="组 66" transform="translate(188.872 -211.377)">
+      <path id="路径_92" data-name="路径 92" class="cls-2" d="M161.139,264.887H143.194a2.036,2.036,0,0,0-1.925,2.131v10.489a2.036,2.036,0,0,0,1.925,2.132h6.374a.856.856,0,0,1,.751.481l1.1,2.1a.829.829,0,0,0,1.5,0l1.094-2.1a.858.858,0,0,1,.753-.481h6.374a2.036,2.036,0,0,0,1.924-2.132V267.018A2.036,2.036,0,0,0,161.139,264.887Z" transform="translate(0 0)"/>
+      <g id="组_65" data-name="组 65" transform="translate(143.772 270.622)">
+        <g id="组_62" data-name="组 62">
+          <circle id="椭圆_42" data-name="椭圆 42" class="cls-3" cx="1.641" cy="1.641" r="1.641"/>
+        </g>
+        <g id="组_63" data-name="组 63" transform="translate(6.753)">
+          <circle id="椭圆_43" data-name="椭圆 43" class="cls-3" cx="1.641" cy="1.641" r="1.641"/>
+        </g>
+        <g id="组_64" data-name="组 64" transform="translate(13.506)">
+          <circle id="椭圆_44" data-name="椭圆 44" class="cls-3" cx="1.641" cy="1.641" r="1.641"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
