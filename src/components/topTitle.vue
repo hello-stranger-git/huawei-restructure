@@ -44,13 +44,24 @@ export default {
 
 <style lang="less" scoped>
 /deep/.van-nav-bar__title{
-  font-size: 18px;
+  .rem(font-size,18px);
   font-weight: bold;
   color: #000000;
 }
+/deep/.van-nav-bar{
+    .rem(line-height,44px);
+  .van-nav-bar__content{
+    .rem(height,44px);
+    .van-nav-bar__left{
+      .rem(font-size,14px);
+      .rem(font-size,14px);
+      .rem(padding-left,14px);
+    }
+  }
+}
 /deep/.van-nav-bar__arrow{
   color: #000000;
-  font-size: 19px;
+  .rem(font-size,19px)
 }
 // 头部
 /deep/.van-hairline--bottom::after {
