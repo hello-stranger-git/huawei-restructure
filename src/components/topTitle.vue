@@ -43,6 +43,12 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.topTitle{
+  display: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
 /deep/.van-nav-bar__title{
   .rem(font-size,18px);
   font-weight: bold;
