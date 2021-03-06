@@ -1,7 +1,16 @@
 <!--今日进店-->
 <template>
   <div class="enterstore">
-    <div>今日进店</div>
+    <div class="title">
+      <div class="left">
+        <span>今日进店</span>
+        <span>(247人)</span>
+      </div>
+      <div class="right" @click="moreHandle">
+        <span>更多</span>
+        <svg-icon icon-class="arrowRightIcon"/>
+      </div>
+    </div>
     <div class="enterstore_content">
       <StoreUserItem v-for="item in data" :key="item.id" :data="item"/>
     </div>
@@ -54,6 +63,11 @@ export default {
   },
   components: {
     StoreUserItem
+  },
+  methods: {
+    moreHandle () {
+      console.log('今日进店更多')
+    }
   }
 }
 </script>
@@ -62,10 +76,49 @@ export default {
 .enterstore{
   .rem(height,169px);
   .rem(padding,12px);
+  .rem(border-radius,10px);
   background-color: #fff;
-
-.enterstore_content{
-  display: flex;
+  box-sizing: border-box;
+  .enterstore_content{
+    display: flex;
+    justify-content: space-between;
+    .rem(margin-top,12px);
+  }
 }
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left{
+    span{
+      &:first-child{
+        .rem(font-size,18px);
+        .rem(line-height,25px);
+        font-weight:800;
+        color: #141414;
+      }
+      &:last-child{
+        .rem(font-size,12px);
+        .rem(line-height,17px);
+        .rem(margin-left,3px);
+        font-weight: 400;
+        color: #A4A4A4;
+      }
+    }
+  }
+  .right{
+    span{
+      &:first-child{
+        .rem(font-size,12px);
+        .rem(line-height,17px);
+        color: #A4A4A4;
+      }
+      // &:last-child{
+      //   .rem(font-size,10px);
+      //   .rem(margin-left,10px);
+      //   color: #898989;
+      // }
+    }
+  }
 }
 </style>
