@@ -55,7 +55,12 @@ export default {
 <style lang="less" scoped>
 .navbar{
   .rem(height,103px);
-  background:cadetblue;
+  .rem(padding-left,30px);
+  .rem(padding-right,30px);
   display: flex;
+  background:#fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
