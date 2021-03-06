@@ -27,7 +27,7 @@ export default {
   data () {
     return {
       newsIcon: require('@/assets/image/header/newsIcon.png'),
-      logo: require('@/assets/image/header/huawei_logo.png'), // 店铺logo
+      // logo: require('@/assets/image/header/huawei_logo.png'), // 店铺logo
       title: '龙岗区华为体验店', // 店铺名称
       uname: '兰宇贵', // 账号昵称
       getBadge: 12, // 未读消息数量
