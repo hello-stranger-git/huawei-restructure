@@ -33,11 +33,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
   .svg-icon {
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.15em;
+    .rem(width,10px);
+    .rem(height,10px);
+    // vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
   }
