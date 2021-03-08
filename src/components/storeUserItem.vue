@@ -70,6 +70,7 @@ export default {
 .userIcon{
   .rem(width,58px);
   .rem(height,58px);
+  border-radius: 50%;
 }
 // vip图标样式
 .vipIcon{
