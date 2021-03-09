@@ -2,7 +2,10 @@
 <template>
   <div class="todayhot">
     <div class="title">今日热力图</div>
-    <div class="more">更多></div>
+    <div class="more">
+      <span>更多</span>
+      <svg-icon icon-class="arrowRightIcon"/>
+    </div>
     <div class="pic">
       <img :src="todayHotPic ? todayHotPic : defaultPic" />
     </div>
@@ -16,7 +19,7 @@ export default {
     return {
       defaultPic: require('@/assets/image/home/todayhot/defaultIcon.png'),
       todayHotPic: require('@/assets/image/home/todayhot/heatMap.png'),
-      time: new Date().toLocaleString()
+      time: '12/02 19:42:58'
     }
   }
 }
@@ -26,7 +29,9 @@ export default {
 .todayhot {
   position: relative;
   .rem(height,327px);
+  .rem(border-radius,10px);
   background-color: #fff;
+  overflow: hidden;
   .title {
     .rem(padding-top,12px);
     .rem(padding-left,12px);
