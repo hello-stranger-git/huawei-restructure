@@ -57,7 +57,8 @@ export default {
 
 <style lang="less" scoped>
 .header{
-  .rem(height, 44px);
+  // .rem(height, 44px);
+  height:44px;
   position: fixed;
   top:0;
   width: 100%;
